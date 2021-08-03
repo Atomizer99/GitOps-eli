@@ -14,10 +14,11 @@ spec:
     path: charts/echo
     ref: master
   values:
-    image:
-      repository: gcr.io/echo-project-320612/echo
-      tag: stg-9ij63o4c
-    replicaCount: 2
+    app:
+      image:
+        repository: gcr.io/echo-project-320612/echo
+        tag: stg-9ij63o4c
+      replicaCount: 2
     hpa:
       enabled: true
       maxReplicas: 10

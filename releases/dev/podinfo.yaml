@@ -14,9 +14,10 @@ spec:
     path: charts/echo
     ref: master
   values:
-    image:
-      repository: gcr.io/echo-project-320612/echo
-      tag: dev-hdtwcel9
-    replicaCount: 1
+    app:
+      image:
+        repository: gcr.io/echo-project-320612/echo
+        tag: dev-hdtwcel9
+      replicaCount: 1
     hpa:
       enabled: false
