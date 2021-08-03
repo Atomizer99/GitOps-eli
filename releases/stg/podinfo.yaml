@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: echoinfo-rc
+  name: echo-rc
   namespace: stg
   annotations:
     fluxcd.io/automated: "true"

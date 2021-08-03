@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: echoinfo-prod
+  name: echo-prod
   namespace: prod
   annotations:
     fluxcd.io/automated: "true"
