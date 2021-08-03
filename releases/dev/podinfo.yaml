@@ -2,20 +2,20 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
+  name: echo-dev
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: echoinfo-dev
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
-    path: charts/podinfo
+    git: git@github.com:Atomizer99/GitOps-eli
+    path: charts/echo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
+      repository: gcr.io/echo-project-320612/echo
       tag: dev-hdtwcel9
     replicaCount: 1
     hpa:
