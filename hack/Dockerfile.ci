@@ -2,3 +2,4 @@ FROM gcr.io/echo-project-320612/echo:v1.1
 
 ARG VERSION=unknown
 ARG GITCOMMIT=unknown
+ARG TESTMSG=unknown
