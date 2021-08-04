@@ -19,7 +19,7 @@ spec:
     app:
       image:
         repository: gcr.io/echo-project-320612/echo
-        tag: dev-1.2
+        tag: v1.1
       replicaCount: 1
     hpa:
       enabled: false
