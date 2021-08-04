@@ -8,7 +8,7 @@ app:
     name: echoappv4
     image: gcr.io/echo-project-320612/echo
     port: 3000
-    tag: v1
+    tag: v1.1
   requests:
     memory: "64Mi"
     cpu: "250m"
