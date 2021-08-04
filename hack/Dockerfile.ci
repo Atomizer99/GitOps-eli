@@ -1,4 +1,4 @@
-FROM gcr.io/echo-project-320612/echo:v1.1
+FROM gcr.io/echo-project-320612/echo:v1
 
 ARG VERSION=unknown
 ARG GITCOMMIT=unknown
